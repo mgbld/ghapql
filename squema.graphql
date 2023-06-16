@@ -1,3 +1,10 @@
 type Query {
-  greeting: String
+  jobs: [Job!]
+}
+
+type Job {
+  # NULLABLE BY DEFAULT IT GETS SPECIFIED
+  id: ID! # Scalar type: Single value
+  title: String! #IT HAS TO BE SET ALWAYS
+  description: String
 }
